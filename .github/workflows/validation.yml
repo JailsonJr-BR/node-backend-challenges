@@ -1,0 +1,33 @@
+name: Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Markdown Lint
+      uses: avto-dev/markdown-lint@v1
+      with:
+        config: '.markdownlint.json'
+        args: '**/*.md'
+        
+    - name: Check File Structure
+      run: |
+        bash .github/scripts/check-structure.sh
+        
+    - name: Validate Challenge Templates
+      run: |
+        bash .github/scripts/validate-challenges.sh
+
+    - name: Spell Check
+      uses: streetsidesoftware/cspell-action@v1
+      with:
+        files: '**/*.md'
