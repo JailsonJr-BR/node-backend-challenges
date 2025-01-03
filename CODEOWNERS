@@ -1,0 +1,5 @@
+# Codeowners for node-backend-challenges
+* @JailsonJr-BR
+
+# Challenges specific reviews
+/challenges/ @JailsonJr-BR
