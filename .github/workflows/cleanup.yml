@@ -1,0 +1,21 @@
+name: Cleanup
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Cleanup Git configs
+        run: |
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git config --local --unset-all core.sshCommand || true
+      
+      - name: Remove temporary files
+        run: |
+          rm -rf /home/runner/work/_temp/* || true
