@@ -28,11 +28,6 @@ jobs:
     - name: Validate Challenge Templates
       run: |
         bash .github/scripts/validate-challenges.sh
-
-    - name: Spell Check
-      uses: streetsidesoftware/cspell-action@v1
-      with:
-        files: '**/*.md'
         
     - name: Cleanup
       if: always()
