@@ -2,10 +2,10 @@
 
 ## 📝 Descrição
 
-Neste desafio, você irá criar uma API REST para gerenciar tarefas de usuários, contemplando operações de CRUD 
+Neste desafio, você irá criar uma API REST para gerenciar tarefas de usuários, contemplando operações de CRUD
 (Create, Read, Update, Delete), além de um sistema básico de autenticação e registro de usuários.
 
-O objetivo é praticar os fundamentos do desenvolvimento backend em Node.js, incluindo organização de projeto, 
+O objetivo é praticar os fundamentos do desenvolvimento backend em Node.js, incluindo organização de projeto,
 boas práticas de arquitetura, uso de banco de dados e recursos de segurança mínimos (autenticação JWT).
 
 ## 🎯 Objetivos
@@ -333,7 +333,7 @@ Resposta (erro - 403):
 ## 🎁 Bônus (Opcionais)
 
 - Filtros de busca de tarefas: por status (pending, completed), por data de criação, etc.
-- Paginação na listagem de tarefas (ex.: ```?page=1&limit=10```).
+- Paginação na listagem de tarefas (ex.: `?page=1&limit=10`).
 - Recuperação de Senha: enviar e-mail de recuperação, token de reset.
 - Testes Automatizados: testes unitários e/ou de integração (Jest, Mocha, Chai).
 - Deploy em um serviço gratuito (Heroku, Render, Railway etc.) e documentação no README.
