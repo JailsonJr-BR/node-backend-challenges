@@ -61,7 +61,7 @@ boas práticas de arquitetura, uso de banco de dados e recursos de segurança m�
 
 ## 📐 Arquitetura (Sugestão)
 
-```
+```plaintext
 project/
 │   package.json
 │   .env
@@ -344,4 +344,5 @@ Resposta (erro - 403):
 - [Documentação do Express](https://expressjs.com)
 - [JSON Web Tokens (JWT) em Node.js](https://jwt.io/)
 - [bcrypt para hashing de senhas](https://www.freecodecamp.org/news/how-to-hash-passwords-with-bcrypt-in-nodejs/)
-- [Sequelize (SQL) ou Mongoose (MongoDB)](https://sequelize.org/ | https://mongoosejs.com/)
+- [Sequelize (SQL)](https://sequelize.org/)
+- [Mongoose (MongoDB)](https://mongoosejs.com/)
